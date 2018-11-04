@@ -24,6 +24,8 @@ namespace ETIS.Helpers
         public static string ValuutaKood(KLVaartus valuuta)
         {
             var vaartusTrimmed = valuuta.Vaartus.Trim();
+            if (vaartusTrimmed.Length < 3)
+                return null;
             return vaartusTrimmed.Substring(0, 3).ToUpper();
         }
     }
