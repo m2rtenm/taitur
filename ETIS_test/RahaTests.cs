@@ -34,14 +34,6 @@ namespace ETIS_test
             Assert.IsFalse(raha1.Equals(raha2));
         }
 
-        [TestMethod]
-        public void TestAreNotEqual3()
-        {
-            var raha1 = new Raha(40, "EUR");
-            var raha2 = new Raha(40, "EEK");
-
-            Assert.IsFalse(raha1.Equals(raha2));
-        }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
